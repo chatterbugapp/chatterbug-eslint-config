@@ -1,6 +1,6 @@
 {
   "name": "@chatterbug/eslint-config",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Chatterbug's Shareable ESLint Config",
   "main": ".eslintrc.js",
   "scripts": {},
