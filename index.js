@@ -26,11 +26,22 @@ module.exports = {
       ...eslintRecommended,
       ...legacyConfig,
     },
+    {
+      files: ['**/*.ts?(x)'],
+      rules: {
+        '@typescript-eslint/array-type': 'error',
+        '@typescript-eslint/ban-types': 'error',
+        '@typescript-eslint/no-extra-non-null-assertion': 'warn',
+        '@typescript-eslint/no-floating-promises': 'warn',
+        '@typescript-eslint/no-for-in-loop': 'error',
+        '@typescript-eslint/no-misused-promises': 'warn',
+        '@typescript-eslint/no-non-null-asserted-optional-chain': 'warn',
+        '@typescript-eslint/no-unnecessary-type-assertion': 'warn',
+        '@typescript-eslint/no-unsafe-return': 'warn',
+        '@typescript-eslint/prefer-nullish-coalescing': 'warn',
+        '@typescript-eslint/prefer-optional-chain': 'warn',
+        '@typescript-eslint/unbound-method': 'error'
+      }
+    },
   ],
-
-  rules: {
-    '@typescript-eslint/array-type': 'error',
-    '@typescript-eslint/await-thenable': 'error',
-    '@typescript-eslint/ban-types': 'error',
-  },
 }
