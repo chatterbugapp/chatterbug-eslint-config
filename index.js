@@ -33,7 +33,6 @@ module.exports = {
         '@typescript-eslint/ban-types': 'error',
         '@typescript-eslint/no-extra-non-null-assertion': 'warn',
         '@typescript-eslint/no-floating-promises': 'warn',
-        '@typescript-eslint/no-for-in-loop': 'error',
         '@typescript-eslint/no-misused-promises': 'warn',
         '@typescript-eslint/no-non-null-asserted-optional-chain': 'warn',
         '@typescript-eslint/no-unnecessary-type-assertion': 'warn',
