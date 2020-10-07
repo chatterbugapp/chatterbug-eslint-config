@@ -36,7 +36,6 @@ module.exports = {
         '@typescript-eslint/no-misused-promises': 'warn',
         '@typescript-eslint/no-non-null-asserted-optional-chain': 'warn',
         '@typescript-eslint/no-unnecessary-type-assertion': 'warn',
-        '@typescript-eslint/no-unsafe-return': 'warn',
         '@typescript-eslint/prefer-nullish-coalescing': 'warn',
         '@typescript-eslint/prefer-optional-chain': 'warn',
         '@typescript-eslint/unbound-method': 'error'
