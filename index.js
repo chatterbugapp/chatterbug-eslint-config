@@ -1,9 +1,17 @@
+// NB: You can't put `extends` in an overrides section because /shrug, so we
+// fake it out by just direcly including it
+const eslintRecommended = require('eslint/conf/eslint-recommended')
+
 let legacyConfig = JSON.parse(JSON.stringify(require('./javascript')))
+delete legacyConfig.extends
 
 module.exports = {
   parser: '@typescript-eslint/parser',
 
   extends: [
+    // NB: We use the default preset from `create-react-app` as our base,
+    // because one of the great things it does is disable ESLint rules that
+    // are better covered by the TypeScript compiler, such as 'no-unused-var'.
     'react-app',
 
     // NB: Disable rules that Prettier covers
@@ -12,17 +20,10 @@ module.exports = {
     'prettier/@typescript-eslint',
   ],
 
-  settings: {
-    // We use `babel-plugin-module-alias` to map `src` to `./app/javascript`,
-    // this makes the "import/order" eslint plugin aware of those module aliases.
-    'import/resolver': {
-      'babel-module': {},
-    },
-  },
-
   overrides: [
     {
       files: ['**/*.js?(x)'],
+      ...eslintRecommended,
       ...legacyConfig,
     },
   ],
