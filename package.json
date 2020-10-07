@@ -1,7 +1,6 @@
 {
   "name": "@chatterbug/eslint-config",
-  "version": "3.0.0",
-  "main": "index.js",
+  "version": "4.0.0-beta.1",
   "dependencies": {
     "babel-eslint": "^10.0.3",
     "eslint": "5.16.0",
