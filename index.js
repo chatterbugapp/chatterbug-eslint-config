@@ -40,5 +40,11 @@ module.exports = {
         '@typescript-eslint/unbound-method': 'error'
       }
     },
+    {
+      files: ['**/*.stories.*'],
+      rules: {
+        'import/no-anonymous-default-export': 'off'
+      }
+    }
   ],
 }
