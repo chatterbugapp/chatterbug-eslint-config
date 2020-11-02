@@ -1,6 +1,6 @@
 {
   "name": "@chatterbug/eslint-config",
-  "version": "4.0.1",
+  "version": "4.0.2",
   "dependencies": {
     "eslint": "^5.16.0"
   },
