@@ -50,20 +50,7 @@ module.exports = {
     camelcase: ['warn', { properties: 'never', allow: ['smart_count'] }],
     'no-new': 'warn',
     'new-cap': ['error', { newIsCap: true, capIsNew: false }],
-    'import/order': [
-      'warn',
-      {
-        groups: [
-          'builtin',
-          'external',
-          'internal',
-          'parent',
-          'sibling',
-          'index',
-        ],
-        'newlines-between': 'always',
-      },
-    ],
+    'import/order': 'off',
     // React Rules
     'react/prop-types': [
       'warn',
