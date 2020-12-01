@@ -37,14 +37,20 @@ module.exports = {
         '@typescript-eslint/no-non-null-asserted-optional-chain': 'warn',
         '@typescript-eslint/no-unnecessary-type-assertion': 'warn',
         '@typescript-eslint/prefer-optional-chain': 'warn',
-        '@typescript-eslint/unbound-method': 'error'
-      }
+        '@typescript-eslint/unbound-method': 'error',
+      },
     },
     {
       files: ['**/*.stories.*'],
       rules: {
-        'import/no-anonymous-default-export': 'off'
-      }
-    }
+        'import/no-anonymous-default-export': 'off',
+      },
+    },
+    {
+      files: ['**/__tests__/*'],
+      rules: {
+        'react/jsx-no-literals': 'off',
+      },
+    },
   ],
 }
