@@ -25,7 +25,6 @@ module.exports = {
       files: ['**/*.js?(x)'],
       ...eslintRecommended,
       ...legacyConfig,
-      'linebreak-style': 'off',
     },
     {
       files: ['**/*.ts?(x)'],
