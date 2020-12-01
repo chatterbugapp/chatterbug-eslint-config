@@ -25,6 +25,7 @@ module.exports = {
       files: ['**/*.js?(x)'],
       ...eslintRecommended,
       ...legacyConfig,
+      'linebreak-style': 'off',
     },
     {
       files: ['**/*.ts?(x)'],
@@ -38,6 +39,7 @@ module.exports = {
         '@typescript-eslint/no-unnecessary-type-assertion': 'warn',
         '@typescript-eslint/prefer-optional-chain': 'warn',
         '@typescript-eslint/unbound-method': 'error',
+        'linebreak-style': 'off',
       },
     },
     {
