@@ -30,6 +30,7 @@ module.exports = {
       files: ['**/*.ts?(x)'],
       rules: {
         '@typescript-eslint/array-type': 'error',
+        '@typescript-eslint/await-thenable': 'error',
         '@typescript-eslint/ban-types': 'error',
         '@typescript-eslint/no-extra-non-null-assertion': 'warn',
         '@typescript-eslint/no-floating-promises': 'warn',
